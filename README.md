@@ -147,20 +147,23 @@ Based on our Modeling approach
             test result have small gap from train result in term of RMSE
             
 based on the appraoch, ridge with 𝛼=10 wihtout scaling provide the best R2 score, RMSE, gap with between train and test result
-      the model have error that can generate price deviatopm at 1,171,893 bht 
-      based on top coefficient in the result below, we recommend the following feature to add value to home price  
-           - number of baht room add 6334k bht per room 
-           - size of floor area add 633k bht per 1sqm
-           - number of bed rooms add 458 bht per room 
-           - being in klongtun nua subdistrict add 266k baht per room
-           - being detached house add 314k bht 
-           - increase 1 floor level add 261k bht
+      
+      1) the model have error that can generate price deviatopm at 1,171,893 bht 
+      2) based on top coefficient in the result below, we recommend the following feature to add value to home price  
+               - number of baht room add 6334k bht per room 
+               - size of floor area add 633k bht per 1sqm
+               - number of bed rooms add 458 bht per room 
+               - being in klongtun nua subdistrict add 266k baht per room
+               - being detached house add 314k bht 
+               - increase 1 floor level add 261k bht
 
 #### Business Recommendation
 
 Which factors appear to be most significant to a home?
 
-        size(number of bahtroom, number of bed room, floor area) location (bangkok central district such as klongton nua) and property type (detached house)
+        size(number of bahtroom, number of bed room, floor area) 
+        location (bangkok central district such as klongton nua) 
+        and property type (detached house)
 
       
 Which features appear to add the most value to a home?
