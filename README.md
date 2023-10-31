@@ -124,11 +124,14 @@ based on these factors, we able to come up with price prediction tool that help 
 however for the other provinces, the tools need adjustment because some factors will be different such as public transports which do not exist in the other provinces.
 
 Based on our Modeling approach
+
     1) we will input all features that are available except 3 following columns
             land area because it has too many null value and its null value not randomly missing; it only missing in condo property type
             year built because it has too many null value and it does not make sense to impute year value with mean, median, or mode data
             month built because month should not be useful with year built columsn
+            
     2) after feature all available columns, we will tune the performance of the model by using regularization
+    
     3) we will use 6 models including
             linear regression model
             linear regression model with scaling
@@ -136,20 +139,22 @@ Based on our Modeling approach
             ridge model with scaling
             lasso model
             lasso model with scaling
+            
     4) then we will evaluate each model with R2 and RMSE and select one the have best result
             test result have high R2 score
             test result have low RMSE
             test result have small gap from train result in term of R2 score
             test result have small gap from train result in term of RMSE
+            
 based on the appraoch, ridge with 𝛼=10 wihtout scaling provide the best R2 score, RMSE, gap with between train and test result
-  the model have error that can generate price deviatopm at 1,171,893 bht 
-  based on top coefficient in the result below, we recommend the following feature to add value to home price  
-       - number of baht room add 6334k bht per room 
-       - size of floor area add 633k bht per 1sqm
-       - number of bed rooms add 458 bht per room 
-       - being in klongtun nua subdistrict add 266k baht per room
-       - being detached house add 314k bht 
-       - increase 1 floor level add 261k bht
+      the model have error that can generate price deviatopm at 1,171,893 bht 
+      based on top coefficient in the result below, we recommend the following feature to add value to home price  
+           - number of baht room add 6334k bht per room 
+           - size of floor area add 633k bht per 1sqm
+           - number of bed rooms add 458 bht per room 
+           - being in klongtun nua subdistrict add 266k baht per room
+           - being detached house add 314k bht 
+           - increase 1 floor level add 261k bht
 
 #### Business Recommendation
 
